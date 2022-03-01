@@ -57,7 +57,7 @@
                 }
             }
             console.log(grid.map((col) => col.join(",")).join("\n"));
-            const table = document.getElementById("table");
+            const table = document.getElementById("diagram-table-content");
             table.innerHTML = "";
             const firstTr = table.appendChild(document.createElement("tr"));
             firstTr.appendChild(document.createElement("td"));
@@ -81,13 +81,29 @@
     </script>
     <style>
         table {
-            margin: auto;
+            float: right;
             text-align: center;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        #values-table {
+            margin-left: 8px;
+        }
+
+        #values-table tr:first-child td {
+            border-bottom: solid 3px black;
+        }
+
+        #diagram-table {
+            margin: 32px 0 0 8px;
             font-weight: bold;
             font-size: 24px;
         }
 
-        table td {
+        #diagram-table td {
             border: none;
             padding: 4px;
         }
@@ -114,11 +130,11 @@
                 <span class="page-header-section-title">Wave Collapse</span>
             </div>
             <div class="page-content">
-                <img src="img/Component/Module Name.svg" class="diagram">
+                <img src="img/Component/Wave Collapse.svg" class="diagram">
                 <h2>On the Subject of Wave Collapse</h2>
                 <p class="flavour-text">Any joke about Schrödinger's cat is funny and unfunny at the same time.</p>
                 <p>
-                    The module has a 5x8 grid and 8 buttons. Each button is associated with one particle, which is located somewhere in the grid.
+                    The module has a 5x7 grid and 8 buttons. Each button connected with one particle, which is located somewhere in the grid.
                     Each button has a symbol that describes the type of particle.
                 </p>
                 <p>
@@ -126,34 +142,51 @@
                     The wave function is the cells of the grid in which the particle can be located. The wave function is a 2x2 square.
                 </p>
                 <p>Remember the order, type, and wave function of each particle. This information will not be available after the collapse.</p>
+                <table id="values-table">
+                    <tr>
+                        <td>Value</td>
+                        <td>Multiplier</td>
+                    </tr>
+                    <tr>
+                        <td>Port plates</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Last digit of modules count</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>First digit of serial number</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Starting time in minutes</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Indicators without vowels</td>
+                        <td>5</td>
+                    </tr>
+                </table>
                 <p>
-                    Hold down any button for one second to collapse the wave function of the particle:
-                    this particle will take one of four positions and be displayed on the grid.
+                    Sum the results of each row in the table on the right. Subtract or add 8 until the result is between 1 and 8.
+                    Hold down the button with this number in reading order for more than one second.
+                    This will collapse the wavefunction of the particle of this button: particle will take one of four positions and be displayed on the grid.
                 </p>
+                <table id="diagram-table">
+                    <tbody id="diagram-table-content"></tbody>
+                </table>
                 <p>To solve the module, press the positions of all the other particles in the reading order of their buttons.</p>
                 <p>
                     If the wave functions of two particles intersect, then the two particles are entangled.
-                    All particles on this module are connected into a single system, that is, each particle is connected to each,
-                    but not necessarily entangled with it directly.
-                    Use the table on the next page to determine the position of particles after collapse.
-                    Find a diagram corresponding to the types of two directly entangled particles.
-                    If the collapsed particle ended up in the cell where the point is drawn on the diagram, then the entangled particle will be in the same cell.
-                    Otherwise, if there is a line in this cell on the diagram, then the entangled particle will be located at the other end of the line.
+                    Use the table on the right to determine the position of particles after collapse.
+                    Find a diagram corresponding to the types of two entangled particles.
+                    If the collapsed particle ended up in the cell where the point is drawn on the diagram,
+                    then the entangled particle will collapse to the same position relative to its wave function.
+                    Otherwise, if there is a line in this cell on the diagram, then the entangled particle will collapse in the other end of the line.
                 </p>
             </div>
-            <div class="page-footer relative-footer">Page 1 of 2</div>
-        </div>
-        <div class="page page-bg-01">
-            <div class="page-header">
-                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
-                <span class="page-header-section-title">Wave Collapse</span>
-            </div>
-            <div class="page-content">
-                <table>
-                    <tbody id="table"></tbody>
-                </table>
-            </div>
-            <div class="page-footer relative-footer">Page 2 of 2</div>
+            <div class="page-footer relative-footer">Page 1 of 1</div>
         </div>
     </div>
 </body>

@@ -18,7 +18,7 @@ Manual/css/
 Manual/font/
 Manual/img/*
 !Manual/img/Component/
-Manual/img/Component/*
+Manual/img/Component/Module Name.svg
 Manual/js/*
 
 Assembly-CSharp*
@@ -30,5 +30,4 @@ Models/*
 !Assets/WaveCollapse.meta
 !Assets/WaveCollapse/
 !Manual/img/Wave Collapse/
-!Manual/img/Component/Wave Collapse.svg
 !Manual/js/Wave Collapse/
