@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="wave_collapse.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:bbox-nodes="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-page="true"
+     inkscape:zoom="0.38841188"
+     inkscape:cx="951.30972"
+     inkscape:cy="160.91166"
+     inkscape:window-width="1858"
+     inkscape:window-height="1057"
+     inkscape:window-x="1974"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Lend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path2518" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker2847"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path2845" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Send"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.2) rotate(180) translate(6,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path2530" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker2829"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Sstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.2) translate(6,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path2827" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker2819"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Sstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.2) translate(6,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path2817" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Sstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Sstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.3) translate(-2.3,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;fill:context-stroke;stroke-width:0.62500000;stroke-linejoin:round"
+         id="path2545" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker2801"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Sstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.2) translate(6,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path2799" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4) translate(10,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path2521" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Sstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Sstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.2) translate(6,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path2527" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path2515" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#f7f7f7;fill-opacity:1;stroke:#000000;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4188"
+       width="96"
+       height="96"
+       x="11.770473"
+       y="-124.74699" />
+    <rect
+       style="fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:8.74139;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1799-0-8"
+       width="64"
+       height="64"
+       x="27.770472"
+       y="-108.74699"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_0-0.png"
+       inkscape:export-xdpi="23.107321"
+       inkscape:export-ydpi="23.107321" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#7f7f7f;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect846-2-8"
+       width="31.999992"
+       height="31.999992"
+       x="27.770472"
+       y="-108.74699"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_0-0.png"
+       inkscape:export-xdpi="23.107321"
+       inkscape:export-ydpi="23.107321" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#7f7f7f;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect846-9-5-6"
+       width="31.999992"
+       height="31.999992"
+       x="59.770466"
+       y="-108.74699"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_0-0.png"
+       inkscape:export-xdpi="23.107321"
+       inkscape:export-ydpi="23.107321" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#7f7f7f;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect846-5-9-7"
+       width="31.999992"
+       height="31.999992"
+       x="27.770472"
+       y="-76.746979"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_0-0.png"
+       inkscape:export-xdpi="23.107321"
+       inkscape:export-ydpi="23.107321" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#7f7f7f;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect846-9-3-7-4"
+       width="31.999992"
+       height="31.999992"
+       x="59.770466"
+       y="-76.746979"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_0-0.png"
+       inkscape:export-xdpi="23.107321"
+       inkscape:export-ydpi="23.107321" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:12.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3658-5-8"
+       cx="43.770466"
+       cy="-92.746986"
+       r="6.3499999"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_0-0.png"
+       inkscape:export-xdpi="23.107321"
+       inkscape:export-ydpi="23.107321" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:12.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3658-5-8-8"
+       cx="75.770462"
+       cy="-92.746994"
+       r="6.3499999"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_0-0.png"
+       inkscape:export-xdpi="23.107321"
+       inkscape:export-ydpi="23.107321" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:12.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3658-5-8-3"
+       cx="75.770462"
+       cy="-60.746979"
+       r="6.3499999"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_0-0.png"
+       inkscape:export-xdpi="23.107321"
+       inkscape:export-ydpi="23.107321" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:12.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3658-7-9-0"
+       cx="43.770466"
+       cy="-60.746986"
+       r="6.3499999"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_0-0.png"
+       inkscape:export-xdpi="23.107321"
+       inkscape:export-ydpi="23.107321" />
+    <rect
+       style="fill:#f7f7f7;fill-opacity:1;stroke:#000000;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4188-8"
+       width="96"
+       height="96"
+       x="107.77046"
+       y="-124.74699" />
+    <rect
+       style="fill:#f7f7f7;fill-opacity:1;stroke:#000000;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4188-1"
+       width="96"
+       height="96"
+       x="203.77046"
+       y="-124.74699" />
+    <rect
+       style="fill:#f7f7f7;fill-opacity:1;stroke:#000000;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4188-8-5"
+       width="96"
+       height="96"
+       x="299.77048"
+       y="-124.74699" />
+    <rect
+       style="fill:#f7f7f7;fill-opacity:1;stroke:#000000;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4188-8-5-8"
+       width="96"
+       height="96"
+       x="395.77048"
+       y="-124.74699" />
+    <rect
+       style="fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:8.74139;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1799-0-8-2"
+       width="64"
+       height="64"
+       x="123.77046"
+       y="-108.74699"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_1-4.png"
+       inkscape:export-xdpi="23.107325"
+       inkscape:export-ydpi="23.107325" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#7f7f7f;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect846-2-8-7"
+       width="31.999992"
+       height="31.999992"
+       x="123.77046"
+       y="-108.74699"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_1-4.png"
+       inkscape:export-xdpi="23.107325"
+       inkscape:export-ydpi="23.107325" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#7f7f7f;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect846-9-5-6-6"
+       width="31.999992"
+       height="31.999992"
+       x="155.77045"
+       y="-108.74699"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_1-4.png"
+       inkscape:export-xdpi="23.107325"
+       inkscape:export-ydpi="23.107325" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#7f7f7f;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect846-5-9-7-7"
+       width="31.999992"
+       height="31.999992"
+       x="123.77046"
+       y="-76.746979"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_1-4.png"
+       inkscape:export-xdpi="23.107325"
+       inkscape:export-ydpi="23.107325" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#7f7f7f;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect846-9-3-7-4-1"
+       width="31.999992"
+       height="31.999992"
+       x="155.77045"
+       y="-76.746979"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_1-4.png"
+       inkscape:export-xdpi="23.107325"
+       inkscape:export-ydpi="23.107325" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:12.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3658-5-8-3-9"
+       cx="171.77045"
+       cy="-60.746975"
+       r="6.3499999"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_1-4.png"
+       inkscape:export-xdpi="23.107325"
+       inkscape:export-ydpi="23.107325" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:12.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3658-7-9-0-4"
+       cx="139.77045"
+       cy="-60.746983"
+       r="6.3499999"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_1-4.png"
+       inkscape:export-xdpi="23.107325"
+       inkscape:export-ydpi="23.107325" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#7f7f7f;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect846-7-2"
+       width="31.999992"
+       height="31.999992"
+       x="315.77048"
+       y="-108.74698"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_7-8.png"
+       inkscape:export-xdpi="23.10733"
+       inkscape:export-ydpi="23.10733" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#7f7f7f;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect846-9-34-9"
+       width="31.999992"
+       height="31.999992"
+       x="347.77048"
+       y="-108.74698"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_7-8.png"
+       inkscape:export-xdpi="23.10733"
+       inkscape:export-ydpi="23.10733" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#7f7f7f;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect846-5-5-1"
+       width="31.999992"
+       height="31.999992"
+       x="315.77048"
+       y="-76.746979"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_7-8.png"
+       inkscape:export-xdpi="23.10733"
+       inkscape:export-ydpi="23.10733" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#7f7f7f;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect846-9-3-6-5"
+       width="31.999992"
+       height="31.999992"
+       x="347.77048"
+       y="-76.746979"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_7-8.png"
+       inkscape:export-xdpi="23.10733"
+       inkscape:export-ydpi="23.10733" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:12.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 331.77045,-92.746984 32,31.999994"
+       id="path3084-2"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_7-8.png"
+       inkscape:export-xdpi="23.10733"
+       inkscape:export-ydpi="23.10733" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:12.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3658-7-0-5"
+       cx="331.77048"
+       cy="-60.746986"
+       r="6.3499999"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_7-8.png"
+       inkscape:export-xdpi="23.10733"
+       inkscape:export-ydpi="23.10733" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:12.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3658-7-4-4"
+       cx="363.77045"
+       cy="-92.746979"
+       r="6.3499999"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_7-8.png"
+       inkscape:export-xdpi="23.10733"
+       inkscape:export-ydpi="23.10733" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#7f7f7f;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect846-7-2-3"
+       width="31.999992"
+       height="31.999992"
+       x="411.77048"
+       y="-108.74698"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_9-9.png"
+       inkscape:export-xdpi="23.10733"
+       inkscape:export-ydpi="23.10733" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#7f7f7f;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect846-9-34-9-4"
+       width="31.999992"
+       height="31.999992"
+       x="443.77048"
+       y="-108.74698"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_9-9.png"
+       inkscape:export-xdpi="23.10733"
+       inkscape:export-ydpi="23.10733" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#7f7f7f;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect846-5-5-1-3"
+       width="31.999992"
+       height="31.999992"
+       x="411.77048"
+       y="-76.746979"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_9-9.png"
+       inkscape:export-xdpi="23.10733"
+       inkscape:export-ydpi="23.10733" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#7f7f7f;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect846-9-3-6-5-7"
+       width="31.999992"
+       height="31.999992"
+       x="443.77048"
+       y="-76.746979"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_9-9.png"
+       inkscape:export-xdpi="23.10733"
+       inkscape:export-ydpi="23.10733" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:12.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 427.77044,-92.746985 32,31.999994"
+       id="path3084-2-1"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_9-9.png"
+       inkscape:export-xdpi="23.10733"
+       inkscape:export-ydpi="23.10733" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:12.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 427.77046,-60.74698 32,-32"
+       id="path3084-2-1-7"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_9-9.png"
+       inkscape:export-xdpi="23.10733"
+       inkscape:export-ydpi="23.10733" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:12.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 139.77046,-92.746988 h 32"
+       id="path2447-2-7"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_1-4.png"
+       inkscape:export-xdpi="23.107325"
+       inkscape:export-ydpi="23.107325" />
+    <rect
+       style="fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:8.74139;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1799-0-8-2-6"
+       width="64"
+       height="64"
+       x="219.77046"
+       y="-108.747"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_5-6.png"
+       inkscape:export-xdpi="23.10733"
+       inkscape:export-ydpi="23.10733" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#7f7f7f;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect846-2-8-7-7"
+       width="31.999992"
+       height="31.999992"
+       x="219.77046"
+       y="-108.747"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_5-6.png"
+       inkscape:export-xdpi="23.10733"
+       inkscape:export-ydpi="23.10733" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#7f7f7f;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect846-9-5-6-6-9"
+       width="31.999992"
+       height="31.999992"
+       x="251.77046"
+       y="-108.747"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_5-6.png"
+       inkscape:export-xdpi="23.10733"
+       inkscape:export-ydpi="23.10733" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#7f7f7f;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect846-5-9-7-7-8"
+       width="31.999992"
+       height="31.999992"
+       x="219.77046"
+       y="-76.746986"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_5-6.png"
+       inkscape:export-xdpi="23.10733"
+       inkscape:export-ydpi="23.10733" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#7f7f7f;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect846-9-3-7-4-1-2"
+       width="31.999992"
+       height="31.999992"
+       x="251.77046"
+       y="-76.746986"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_5-6.png"
+       inkscape:export-xdpi="23.10733"
+       inkscape:export-ydpi="23.10733" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:12.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 235.77046,-92.747 h 32"
+       id="path2447-2-7-8"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_5-6.png"
+       inkscape:export-xdpi="23.10733"
+       inkscape:export-ydpi="23.10733" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:12.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 235.77046,-60.746988 h 32"
+       id="path2447-2-7-8-6"
+       inkscape:export-filename="D:\dev\ktane\WaveCollapse\Manual\img\Wave Collapse\Diagram_5-6.png"
+       inkscape:export-xdpi="23.10733"
+       inkscape:export-ydpi="23.10733" />
+  </g>
+</svg>

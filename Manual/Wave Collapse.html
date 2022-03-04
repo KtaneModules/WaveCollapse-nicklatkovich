@@ -2,15 +2,14 @@
 <html>
 
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>Wave Collapse — Keep Talking and Nobody Explodes Module</title>
     <meta name="viewport" content="initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <title>Wave Collapse — Keep Talking and Nobody Explodes Module</title>
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script src="js/ktane-utils.js"></script>
-    <script src="js/ruleseed.js"></script>
+    <script src='js/ruleseed.js'></script>
     <script>
         const PARTICLES_COUNT = 5;
         const SCHEMES_COUNT = 10;
@@ -21,7 +20,7 @@
         }
 
         function getSchemaUrlAndRotation(i) {
-            const res = (s, i) => [`img/Wave Collapse/Diagram_${s}.png`, i];
+            const res = (s, i) => [`img/Wave Collapse/Diagram_${s}.svg`, i];
             if (i < 1) return res("0-0", 0);
             if (i < 5) return res("1-4", (i - 1) % 4);
             if (i < 7) return res("5-6", (i - 1) % 2);
@@ -106,6 +105,10 @@
         #diagram-table td {
             border: none;
             padding: 4px;
+        }
+
+        #diagram-table img {
+            width: 64px;
         }
 
         .r1 {
