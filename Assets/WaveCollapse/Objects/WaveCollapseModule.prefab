@@ -349,6 +349,8 @@ MonoBehaviour:
   GridContainer: {fileID: 4993401057154970}
   ButtonsContainer: {fileID: 4259663711202220}
   Selectable: {fileID: 114441330901543302}
+  Audio: {fileID: 114316950679600626}
+  BombInfo: {fileID: 114504139244337686}
   CellPrefab: {fileID: 114461683339395632, guid: 6d75e5afe2e32504e95bede4de3f1e40,
     type: 2}
   ButtonPrefab: {fileID: 114011501685091872, guid: 9f031c93f8e3b2f42ac62e1ecc8e85fd,

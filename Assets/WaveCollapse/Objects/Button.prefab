@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33904783212813168}
   - component: {fileID: 65970457551203958}
   - component: {fileID: 23458588261132184}
+  - component: {fileID: 114178943561668982}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -277,6 +278,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HighlightScale: {x: 1, y: 1, z: 1}
   OutlineAmount: 0
+--- !u!114 &114178943561668982
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1278699775658940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - Unlit/Color
 --- !u!114 &114601295599640794
 MonoBehaviour:
   m_ObjectHideFlags: 1

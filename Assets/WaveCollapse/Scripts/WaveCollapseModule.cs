@@ -1,22 +1,29 @@
 ﻿using System.Linq;
 using System.Text;
+using System.Collections.Generic;
 using UnityEngine;
 using KeepCoding;
+using KModkit;
 
 public class WaveCollapseModule : ModuleScript {
 	public const float CELLS_OFFSET = 0.0226f;
+	public const string COLLAPSE_SOUND = "Collapse";
 
 	private static readonly char[] PARTICLE_SYMBOLS = "e\xb5\x03bdg\x03b3uctdsb\x03c4ZWH".ToCharArray();
 	private static readonly Color[] PARTICLE_COLORS = Enumerable.Range(0, 15).Select(i => Color.HSVToRGB(i * 3 / 16f % 1f, 1f, 1f)).ToArray();
+	private static readonly HashSet<char> VOWELS = new HashSet<char>("AEIOUY".ToArray());
 
 	public Transform GridContainer;
 	public Transform ButtonsContainer;
 	public KMSelectable Selectable;
+	public KMAudio Audio;
+	public KMBombInfo BombInfo;
 	public CellComponent CellPrefab;
 	public ButtonComponent ButtonPrefab;
 
 	private bool _buttonHold = false;
 	private bool _collapse = false;
+	private int _expectedCollapsingParticle;
 	private int _pressedButton;
 	private float _holdTime;
 	private bool[] _placed = new bool[WaveCollapsePuzzle.PARTICLES_COUNT];
@@ -52,7 +59,7 @@ public class WaveCollapseModule : ModuleScript {
 			_buttons[i] = button;
 		}
 		Selectable.Children = _grid.SelectMany(col => col.Select(c => c.Selectable)).Concat(_buttons.Select(b => b.Selectable)).ToArray();
-		Selectable.UpdateChildrenProperly();
+		Selectable.UpdateChildren();
 	}
 
 	public override void OnActivate() {
@@ -60,6 +67,15 @@ public class WaveCollapseModule : ModuleScript {
 		if (RuleSeedId == 1) _particleSymbols = Enumerable.Range(0, WaveCollapsePuzzle.PARTICLE_TYPES_COUNT).ToArray();
 		else _particleSymbols = Enumerable.Range(0, PARTICLE_SYMBOLS.Length).OrderBy(x => RuleSeed.NextDouble()).Take(WaveCollapsePuzzle.PARTICLE_TYPES_COUNT).ToArray();
 		_puzzle = new WaveCollapsePuzzle(RuleSeed);
+		_expectedCollapsingParticle = new[] {
+			BombInfo.GetPortPlateCount() * 5,
+			BombInfo.GetModuleIDs().Count * 3,
+			BombInfo.GetSerialNumberNumbers().First() * 3,
+			Mathf.FloorToInt(BombInfo.GetTime()) / 60 * 7,
+			BombInfo.GetIndicators().Where(s => s.All(c => !VOWELS.Contains(c))).Count() * 5,
+			7, // to make variable 0-indexed
+		}.Sum() % 8;
+		Log("Expected particle to collapse: #{0}", _expectedCollapsingParticle + 1);
 		for (int i = 0; i < WaveCollapsePuzzle.PARTICLES_COUNT; i++) {
 			Vector2Int wave = _puzzle.Waves[i];
 			char symbol = PARTICLE_SYMBOLS[_particleSymbols[_puzzle.ParticleTypes[i]]];
@@ -84,6 +100,13 @@ public class WaveCollapseModule : ModuleScript {
 		if (_buttonHold) {
 			float timeDiff = Time.time - _holdTime;
 			if (timeDiff > 1f) {
+				if (_pressedButton != _expectedCollapsingParticle) {
+					Log("Trying to collapse particle #{0}. But #{1} expected to be collapse", _pressedButton + 1, _expectedCollapsingParticle + 1);
+					Strike();
+					_holdTime = float.PositiveInfinity;
+					return;
+				}
+				Audio.PlaySoundAtTransform(COLLAPSE_SOUND, transform);
 				_buttonHold = false;
 				_collapse = true;
 				Vector2Int wave = _puzzle.Waves[_pressedButton];
@@ -106,6 +129,7 @@ public class WaveCollapseModule : ModuleScript {
 	}
 
 	private void PressButton(int index) {
+		Audio.PlaySoundAtTransform("Hold", transform);
 		if (_collapse) return;
 		if (_pressedButton >= 0) {
 			_buttons[_pressedButton].TextMesh.color = Color.white;
@@ -143,6 +167,7 @@ public class WaveCollapseModule : ModuleScript {
 			_collapse = false;
 			return;
 		}
+		Audio.PlaySoundAtTransform(COLLAPSE_SOUND, transform);
 		_grid[x][y].AddParticle(PARTICLE_COLORS[_particleSymbols[_puzzle.ParticleTypes[nextParticleId]]]);
 		_buttons[nextParticleId].TextMesh.color = Color.white;
 		_placed[nextParticleId] = true;
@@ -165,6 +190,7 @@ public class WaveCollapseModule : ModuleScript {
 	}
 
 	private void ReleaseButton(int index) {
+		Audio.PlaySoundAtTransform("Release", transform);
 		if (_collapse) return;
 		if (_pressedButton != index) return;
 		_buttonHold = false;
