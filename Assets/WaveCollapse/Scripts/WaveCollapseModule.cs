@@ -1,17 +1,26 @@
-﻿using System.Linq;
-using System.Text;
+﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using KeepCoding;
 using KModkit;
 
 public class WaveCollapseModule : ModuleScript {
 	public const float CELLS_OFFSET = 0.0226f;
+	public const float HOLD_TIME = 1f;
 	public const string COLLAPSE_SOUND = "Collapse";
 
 	private static readonly char[] PARTICLE_SYMBOLS = "e\xb5\x03bdg\x03b3uctdsb\x03c4ZWH".ToCharArray();
 	private static readonly Color[] PARTICLE_COLORS = Enumerable.Range(0, 15).Select(i => Color.HSVToRGB(i * 3 / 16f % 1f, 1f, 1f)).ToArray();
 	private static readonly HashSet<char> VOWELS = new HashSet<char>("AEIOUY".ToArray());
+
+	public readonly string TwitchHelpMessage = new[] {
+		"\"!{0} wave 3\" - view wave function of particle",
+		"\"!{0} cycle\" - view wave functions of all particles",
+		"\"!{0} collapse 3\" - collapse particle",
+		"\"!{0} C3\" - press grid cell (chainable with space)",
+	}.Join(" | ");
 
 	public Transform GridContainer;
 	public Transform ButtonsContainer;
@@ -99,7 +108,7 @@ public class WaveCollapseModule : ModuleScript {
 	private void Update() {
 		if (_buttonHold) {
 			float timeDiff = Time.time - _holdTime;
-			if (timeDiff > 1f) {
+			if (timeDiff >= HOLD_TIME) {
 				if (_pressedButton != _expectedCollapsingParticle) {
 					Log("Trying to collapse particle #{0}. But #{1} expected to be collapse", _pressedButton + 1, _expectedCollapsingParticle + 1);
 					Strike();
@@ -125,6 +134,41 @@ public class WaveCollapseModule : ModuleScript {
 					Log("Particle #{0} ({1}): {2}", i + 1, PARTICLE_SYMBOLS[_particleSymbols[_puzzle.ParticleTypes[i]]], FormatPosition(GetExpectedParticlePosition(i)));
 				}
 			}
+		}
+	}
+
+	public IEnumerator ProcessTwitchCommand(string command) {
+		command = command.Trim().ToLower();
+		if (Regex.IsMatch(command, @"^wave +[1-8]$")) {
+			yield return null;
+			int ind = int.Parse(command.Split(' ').Last());
+			yield return new[] { _buttons[ind - 1].Selectable };
+			yield break;
+		}
+		if (command == "cycle") {
+			yield return null;
+			for (int j = 0; j < WaveCollapsePuzzle.PARTICLES_COUNT; j++) {
+				yield return new[] { _buttons[j].Selectable };
+				yield return new WaitForSeconds(2f);
+			}
+			yield break;
+		}
+		if (Regex.IsMatch(command, @"^collapse +[1-8]$")) {
+			yield return null;
+			int ind = int.Parse(command.Split(' ').Last());
+			yield return _buttons[ind - 1].Selectable;
+			yield return new WaitForSeconds(HOLD_TIME);
+			yield return _buttons[ind - 1].Selectable;
+			yield break;
+		}
+		if (Regex.IsMatch(command, @"^([a-e][1-7]( |$)+)+$")) {
+			yield return null;
+			yield return command.Split(' ').Where(s => s.Length > 0).Select(sc => {
+				int x = sc[0] - 'a';
+				int y = sc[1] - '1';
+				return _grid[x][y].Selectable;
+			}).ToArray();
+			yield break;
 		}
 	}
 
@@ -173,6 +217,7 @@ public class WaveCollapseModule : ModuleScript {
 		_placed[nextParticleId] = true;
 		if (nextParticleId + 1 == WaveCollapsePuzzle.PARTICLES_COUNT) {
 			Log("All particles found. Module solved!");
+			Audio.PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.CorrectChime, transform);
 			Solve();
 		}
 	}
