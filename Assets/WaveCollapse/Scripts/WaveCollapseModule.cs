@@ -215,7 +215,7 @@ public class WaveCollapseModule : ModuleScript {
 		_grid[x][y].AddParticle(PARTICLE_COLORS[_particleSymbols[_puzzle.ParticleTypes[nextParticleId]]]);
 		_buttons[nextParticleId].TextMesh.color = Color.white;
 		_placed[nextParticleId] = true;
-		if (nextParticleId + 1 == WaveCollapsePuzzle.PARTICLES_COUNT) {
+		if (_placed.All(b => b)) {
 			Log("All particles found. Module solved!");
 			Audio.PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.CorrectChime, transform);
 			Solve();
