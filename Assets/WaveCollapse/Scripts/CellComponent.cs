@@ -34,7 +34,7 @@ public class CellComponent : MonoBehaviour {
 		particle.transform.localScale = Vector3.one;
 		particle.transform.localRotation = Quaternion.identity;
 		particle.UpdateHaloSize();
-		particle.Halo.color = color;
+		particle.UpdateColor(color);
 		_particles.Add(particle);
 		if (_particles.Count == 1) {
 			particle.transform.localPosition = Vector3.zero;
